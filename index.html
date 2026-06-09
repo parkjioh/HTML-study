@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- DOCTYPE 문서가 형식과 버전으로 작성되어있는지를 명시
+    선언시 standards mode(최신 형식)로 문서 실행 
+    선언하지 않을 경우 quirks mode로 문서 실행 
+-->
+<html lang="ko">
+<head>
+  <!-- 메타데이터(기계가 읽을 정보)가 담기는 곳
+       페이지의 제목
+       파비콘
+       기타 메타 정보
+      CSS와 자바스크립트 등의 코드 및 링크   
+  -->
+  <meta charset="UTF-8">
+
+  <!-- 
+      charset 
+      - 페이지가 어떤 문자로 작성되었는지 명시 - 글자가 깨지지 않도록
+      - UTF-8 - 전세계 거의 모든 문자를 표현할 수 있는(유니코드) 형식
+      - 문서 저장 형식도 UTF-8로 맞출 것!
+      - html 태그의 lang 속성과의 비교: 언어 vs 문자 인코딩
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      - 익스플로러에서 열람 시 어떤 모드로 실행할 것인지 지정  (...IE=7, IE=8, IE=9, IE=edge)
+      - IE=edge : 해당 익스플로러 버전에서 가장 최신 형식으로 (11의 경우 11)
+      - 이후에는 사용되지 않을 설정 
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+      viewport : 화면에 보여지고 있는 영역
+      모바일 등 특수 상황
+      - 시각적 뷰포트 : 사람에게 보여지는 영역
+      - 레이아웃 뷰포트 : 브라우저가 웹 페이지를 그리는 영역 
+
+      content 속성 안의 항목들 
+      - width	: 뷰포트의 너비
+      	(device-width : 기기의 화면 너비. 정수를 넣으면 픽셀 단위로)
+      - initial-scale :	페이지가 처음 로드될 때의 줌 레벨(기본 1.0)
+      - maximum-scale	: 최대 줌 레벨	(비추천)
+      - minimum-scale	: 최소 줌 레벨	(비추천)
+      - user-scalable	: 사용자가 핀치로 줌인, 아웃 가능 여부	(no로 비활성화, 비추천)
+    -->
+
+    <!-- 
+      Open Graph 정보 
+      - Mata에서 만든 프로토콜 
+      <meta property="og:title" content="얄코의 HTML & CSS 강좌">
+      <meta property="og:description" content="얄코의 최신 강좌! 웹 개발을 위한 HTML과 CSS 지식들을 '떠먹여'드립니다.">
+      <meta property="og:image" content="https://showcases.yalco.kr/html-css-scoop/03-01/yalco.png">
+      공유했을 때 뜨는 설명으로 생각 
+
+      파비콘 (title 옆에 뜨는 아이콘 ) 
+      <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+      - 오늘날에는 .png, .git 파일로 파비콘 사용 가능 
+    -->
+  <title>Document</title>
+  <!--  title : 브라우저의 탭에 표시
+        브라우저 즐겨찾기의 제목으로 표시
+        검색엔진 검색결과의 제목으로 표시    
+  -->
+</head>
+<body>
+  
+</body>
+</html>
