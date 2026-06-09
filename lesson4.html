@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+ <textarea name="" id="">
+ 1. css, js 사용을 위해 요소들을 구분하는 방법들 
+  <!-- 
+  article { /* ... */ }
+  article aside { /* ... */ }
+  article aside figure { /* ... */ }
+  article div header { /* ... */ }
+  article ul li { /* ... */ }
+  article div ul li { /* ... */ }
+  article div ul li.special { /* ... */ }
+/* ... */
+  -->
+  a. 태그 위주 
+  - 장황한 선택자
+  - css 선택자만으로 요소를 식별하기 어려움
+  - 위치와 태그가 같지만 종류가 다를 경우
+  
+  2. 클래스 위주
+  <!-- 
+  .card { /* ... */ }
+  .card .thumb { /* ... */ }
+  .card .thumb .image { /* ... */ }
+  .card .body .title { /* ... */ }
+  .card .body .list { /* ... */ }
+  .card .body .list .list-item { /* ... */ }
+  .card .body .list .list-item.special { /* ... */ }
+  -->
+  - 여전히(혹은 더욱) 장황해질 수 있는 선택자
+  - 종속 관계 명시 없이는 중복될 수 있는 클래스
+
+  3. BEM(Block Element Modifier)
+  <!-- .BLOCK__ELEMENT--MODIFIER { /* ... */ } 
+      .card { /* ... */ }
+      .card__thumb { /* ... */ }
+      .card__image { /* ... */ }
+      .card__title { /* ... */ }
+      .card__list { /* ... */ }
+      .card__list-item { /* ... */ }
+      .card__list-item--special { /* ... */ } 
+  -->
+   - 블록(컴포넌트) 단위로 명명 
+   - 간결해진 선택자 -> 코드량 감소
+   - 명확한 선택자 - 중복 문제 해소
+   - 높은 가독성, 이해하기 쉬운 구조
+
+ </textarea>
+</body>
+</html>
